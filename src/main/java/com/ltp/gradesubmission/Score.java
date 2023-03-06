@@ -11,7 +11,7 @@ import javax.validation.Constraint;
 @Target(ElementType.FIELD)
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy =  scoreValidator.class)
-public @interface Score {
+public @interface Score{
     
     String message() default "Invalid Data";
 	Class<?>[] groups() default {};
